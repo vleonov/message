@@ -1,0 +1,81 @@
+/**
+ * =====================================================================================================================
+ * Base styles
+ */
+
+html, body {
+	font-family: Verdana;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+body {
+    padding-top: 30px;
+}
+.container-fluid {
+    padding-top: 15px;
+}
+a {
+	color: #696969;
+    text-decoration: underline;
+}
+a:hover {
+	color: firebrick;
+}
+
+
+.Absolute-Center {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.Absolute-Center.formMain {
+    max-height: 100px;
+    width: 50%;
+}
+.Absolute-Center.qr {
+    height: 50%;
+    width: 50%;
+    text-align: center;
+}
+.Absolute-Center.sent {
+    height: 50%;
+    width: 40%;
+    min-width: 240px;
+}
+.Absolute-Center.phone {
+    height: 300px;
+    width: 30%;
+    min-width: 170px;
+    text-align: center;
+    overflow: hidden;
+}
+.Absolute-Center.phone div {
+    margin-bottom: 20px;
+}
+.Absolute-Center.phone div:last-child {
+    margin-bottom: 0;
+}
+
+
+#formMain input,
+#formMain button {
+    font-size: 22px;
+    padding: 11px 19px
+}
+#formMain input {
+    width:70%;
+}
+#formMain button {
+    width:20%;
+}
+
+#qr {
+    max-width: 100%;
+    max-height: 100%;
+}

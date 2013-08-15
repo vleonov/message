@@ -1,0 +1,8 @@
+etc/config.php
+www/bulks
+www/photos
+www/prevws
+www/thumbs
+var/compiled/*
+var/tmp/*
+www/tmp/*
