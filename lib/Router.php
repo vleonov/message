@@ -12,7 +12,8 @@ class Router {
             $uri = U_Url::path();
         }
 
-        $base = U_Misc::is(Config()->base[U_Url::host()], '');
+	$base = Config()->base;
+        $base = U_Misc::is($base[U_Url::host()], '');
 
         $uri = trim(trim($uri), '/');
         $this->_uri = preg_replace('~^' . $base . '~', '', ($uri ? '/' . $uri . '/' : '/'));

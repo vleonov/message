@@ -19,7 +19,7 @@ class C_Message extends Controller
                 echo $mMessage->text;
                 echo $mPhone->phone;
 
-                return Response()->redirect($mPhone->hash . '/sent');
+                return Response()->redirect('/' . $mPhone->hash . '/sent');
             }
         }
 
@@ -45,7 +45,7 @@ class C_Message extends Controller
             break;
         }
 
-        $url = PROJECT_HOST . '/' . $mPhone->hash;
+        $url = 'http:' . U_Url::base() . '/' . $mPhone->hash;
 
         return Response()->assign('src', U_QR::url($url, 8))->fetch('qr.tpl');
     }

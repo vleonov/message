@@ -41,7 +41,7 @@ abstract class ModelList implements Iterator {
             $this->_tblName,
             implode(' AND ', $conditions),
             implode(', ', $orders),
-            $limit ?: 1e3
+            $limit ? $limit : 1e3
         );
 
         $res = $oDb->query($sql);

@@ -21,7 +21,6 @@ class C_Main extends Controller
                     $mPhone = new M_Phone();
                     $mPhone->phone = $validPhone;
                 }
-
                 $mPhone->save();
 
                 return Response()->redirect('/' . $mPhone->hash . '/qr');

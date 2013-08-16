@@ -3,7 +3,7 @@
 define('ROOT_DIR', realpath(dirname(__FILE__) . '/../'));
 define('WWW_DIR', ROOT_DIR . '/www');
 define('WWW_TMP_DIR', ROOT_DIR . '/www/tmp');
-define('TMP_URL', '/tmp');
+define('TMP_URL', 'tmp');
 define('ETC_DIR', ROOT_DIR . '/etc');
 define('LIB_DIR', ROOT_DIR . '/lib');
 define('VAR_DIR', ROOT_DIR . '/var');
