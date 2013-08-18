@@ -8,7 +8,7 @@ class C_Main extends Controller
         $request = Request();
         if ($request->isPost()) {
             $phone = $request->phone;
-            $validPhone = preg_replace('/(^\+7|[^\d])/', '', $phone);
+            $validPhone = preg_replace('/(^\+7|^8|[^\d])/', '', $phone);
 
             if (strlen($validPhone) == 10) {
 

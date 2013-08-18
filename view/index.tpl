@@ -1,8 +1,8 @@
 {extends file="layout.tpl"}
 
 {block "js"}
-    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
-    <script type="text/javascript" src="js/form.js"></script>
+    {*<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>*}
+    {*<script type="text/javascript" src="js/form.js"></script>*}
 {/block}
 
 {block "content"}

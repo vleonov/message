@@ -32,15 +32,17 @@ a:hover {
     position: absolute;
     right: 0;
     top: 0;
+    padding-top: 45px;
 }
 
 .Absolute-Center.formMain {
     max-height: 100px;
     width: 50%;
+    min-width: 330px;
 }
 .Absolute-Center.qr {
     height: 50%;
-    width: 50%;
+    width: 70%;
     text-align: center;
 }
 .Absolute-Center.sent {
@@ -69,10 +71,10 @@ a:hover {
     padding: 11px 19px
 }
 #formMain input {
-    width:70%;
+    width:60%;
 }
 #formMain button {
-    width:20%;
+    width:25%;
 }
 
 #qr {
