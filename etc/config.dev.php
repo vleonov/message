@@ -18,4 +18,9 @@ return array(
     'base' => array(
         'vleonov.me' => '/photo',
     ),
+    'sms' => array(
+        'host' => 'http://api.sms24x7.ru/',
+        'email' => '%email%',
+        'password' => '%password%',
+    ),
 );

@@ -15,10 +15,14 @@ class C_Message extends Controller
 
         if (Request()->isPost()) {
             $mMessage = new M_Message(Request()->messageId);
-            if ($mMessage) {
-                echo $mMessage->text;
-                echo $mPhone->phone;
 
+            $sms = new U_SMS();
+            $sms->setPhone($mPhone->phone)
+                ->setText($mMessage->text)
+                ->setSubject('Message')
+                ->send();
+
+            if ($mMessage) {
                 return Response()->redirect('/' . $mPhone->hash . '/sent');
             }
         }
@@ -61,6 +65,6 @@ class C_Message extends Controller
             break;
         }
 
-        return Response()->fetch('sent.tpl');
+        return Response()->assign(array('phone' => $mPhone))->fetch('sent.tpl');
     }
 }
